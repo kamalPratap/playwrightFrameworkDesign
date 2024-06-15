@@ -1,0 +1,5 @@
+playwright
+pytest-playwright
+pytest-fixtures
+pytest-reporter-html1
+pytest-xdist
