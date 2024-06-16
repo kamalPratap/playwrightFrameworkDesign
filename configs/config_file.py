@@ -1,0 +1,1 @@
+URL = "https://test-app.frevvo.org/frevvo/web/login?_formTz=Asia%252FKolkata"
