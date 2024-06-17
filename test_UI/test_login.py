@@ -1,10 +1,10 @@
-
 import time
 import pytest
 
 from page_object_model.login_logout import LoginLogoutPage
 
 
+@pytest.mark.regression
 def test_run(login_set_up):
     page = login_set_up
     lp1 = LoginLogoutPage(page)
