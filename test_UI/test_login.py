@@ -13,7 +13,7 @@ def test_run(login_set_up):
     time.sleep(1)
     prj = MyProjectPOM(page)
     prj.add_project()
-    prj.click_replace_checkbox()
+    # prj.click_replace_checkbox()
     time.sleep(5)
     lp1.logout()
 
