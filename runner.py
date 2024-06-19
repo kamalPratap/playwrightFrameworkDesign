@@ -3,10 +3,10 @@ import shutil
 from datetime import datetime
 import time
 
-current_work_dir = os.getcwd()
-del_old_report = os.path.join(os.getcwd(), "reports")
-if os.path.isdir(del_old_report):
-    shutil.rmtree(del_old_report)
+# current_work_dir = os.getcwd()
+# del_old_report = os.path.join(os.getcwd(), "reports")
+# if os.path.isdir(del_old_report):
+#     shutil.rmtree(del_old_report)
 
 current_work_dir = os.getcwd()
 # Install dependency
