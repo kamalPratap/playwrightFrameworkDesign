@@ -2,8 +2,6 @@ import time
 
 from playwright.sync_api import Page
 
-from configs import config_file
-
 
 class LoginLogoutPage:
     def __init__(self, page: Page):
