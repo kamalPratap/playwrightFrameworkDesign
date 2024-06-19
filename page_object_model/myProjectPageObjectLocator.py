@@ -13,9 +13,6 @@ class MyProjectPOM:
     def click_replace_checkbox(self):
         self.replace.check()
 
-
-
-
 # page.get_by_title("Add new content").click()
 #     page.get_by_role("link", name=" Upload project").click()
 #     page.get_by_label("Project File").click()
