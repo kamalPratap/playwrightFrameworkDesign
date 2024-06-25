@@ -1,10 +1,14 @@
+import os
 import time
 
 from playwright.sync_api import Page
 
+from page_object_model.myProjectPageObjectLocator import MyProjectPOM
 
-class LoginLogoutPage:
+
+class LoginLogoutPage(MyProjectPOM):
     def __init__(self, page: Page):
+        super().__init__(page)
         self.page = page
         self.username_input_selector = "#username"
         self.password_input_selector = "#password"
@@ -38,3 +42,16 @@ class LoginLogoutPage:
         self.user_icon()
         time.sleep(1)
         self.logout_button()
+
+    def add_project(self):
+        self.page.click(self.plus_icon_on_myProjectPage)
+        time.sleep(1)
+        self.page.click(self.upload_project)
+        current_working_dir = os.getcwd()
+        file_path = os.path.join(current_working_dir, "input_data", "playwright_project_project.zip")
+        time.sleep(1)
+        self.choose_file.set_input_files(file_path)
+        time.sleep(1)
+        self.replace.click()
+        self.upload_button.click()
+        #page.get_by_label("Project File").set_input_files(file_path)
